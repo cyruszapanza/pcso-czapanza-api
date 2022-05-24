@@ -19,7 +19,7 @@ jobs:
 
       - name: Build with dotnet
         run: |
-          cd .\pcso-ali-api
+          cd .\pcso-czapanza-api
           dotnet build -c Release
           dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
       - name: Upload artifact for deployment job
